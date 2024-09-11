@@ -268,8 +268,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16.018911
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -293,12 +293,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1760287881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7229598138698098414, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+  m_PrefabInstance: {fileID: 7229598137073504850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760287882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760287881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28625c0bd77fd924c8b93a3d4c02f68f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 4786741051306754393, guid: 57f1675dd07918143a947d494635eced, type: 3}
+  speed: 2
+  leftAndRightEdge: 10
+  changeDirChance: 0.1
+  appleDropDelay: 1
 --- !u!1001 &7229598137073504850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,12 +328,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7229598137635029768, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229598138192235717, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229598138698098412, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7229598138698098414, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7229598138698098414, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7229598138698098415, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
       propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229598138698098415, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229598138698098415, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229598138698098415, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
+      propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7229598138698098415, guid: 0de48cdd2f4aaf94a93f8d27d33b26a5, type: 3}
