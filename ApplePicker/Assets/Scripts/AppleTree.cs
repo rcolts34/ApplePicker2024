@@ -18,7 +18,7 @@ public class AppleTree : MonoBehaviour
     public float changeDirChance = 0.05f;
 
     // Seconds between Apples instantiations
-    public float appleDropDelay = 0.9f;
+    public float appleDropDelay = 0.7f;
 
     // Start is called before the first frame update
     void Start()
